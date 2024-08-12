@@ -4,12 +4,13 @@ version = "0.1.0"
 edition = "2018"
 
 [lib]
-name = "_core"
+name = "xp"
 # "cdylib" is necessary to produce a shared library for Python to import from.
 crate-type = ["cdylib"]
 
 [dependencies]
 rand = "0.8.3"
+numpy = "*"
 
 [dependencies.pyo3]
 version = "0.19.1"
