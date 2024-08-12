@@ -156,3 +156,6 @@ Thumbs.db
 # Common editor files
 *~
 *.swp
+
+# Copier
+.copier-answers.yml
