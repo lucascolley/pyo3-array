@@ -25,3 +25,7 @@
 [rtd-link]:                 https://pyo3-array.readthedocs.io/en/latest/?badge=latest
 
 <!-- prettier-ignore-end -->
+
+An experimental Python API for https://github.com/rust-ndarray/ndarray, following the Python array API standard.
+Powered by https://github.com/PyO3/pyo3.
+Quickstarted using https://github.com/scientific-python/cookie.
