@@ -159,3 +159,6 @@ Thumbs.db
 
 # Copier
 .copier-answers.yml
+# pixi environments
+.pixi
+*.egg-info
