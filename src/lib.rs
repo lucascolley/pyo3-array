@@ -3,6 +3,9 @@ use numpy::{PyArray2, ToPyArray};
 use pyo3::exceptions::PyNotImplementedError;
 use pyo3::prelude::*;
 
+mod _constants;
+use _constants::{e, inf, nan, newaxis, pi};
+
 #[pyfunction]
 #[pyo3(signature = (n_rows, n_cols=None, /, *, k=0, dtype=None, device=None))]
 fn eye(
@@ -26,7 +29,15 @@ fn eye(
 /// import the module.
 #[pymodule]
 fn xp(_py: Python, m: &PyModule) -> PyResult<()> {
+    // constants
+    m.add("pi", pi)?;
+    m.add("e", e)?;
+    m.add("inf", inf)?;
+    m.add("nan", nan)?;
+    m.add("newaxis", newaxis(_py))?;
+    // functions
     m.add_function(wrap_pyfunction!(eye, m)?)?;
+    // version
     m.add("__version__", env!("CARGO_PKG_VERSION"))?;
 
     Ok(())
