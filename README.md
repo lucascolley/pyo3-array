@@ -26,7 +26,8 @@
 
 <!-- prettier-ignore-end -->
 
-An experimental Python API for [rust-ndarray/ndarray](https://github.com/rust-ndarray/ndarray),
-following [the Python array API standard](https://data-apis.org/array-api/latest/).
-Powered by [pyo3](https://github.com/PyO3/pyo3).
-Quickstarted using [scientific-python/cookie](https://github.com/scientific-python/cookie).
+An experimental Python API for
+[rust-ndarray/ndarray](https://github.com/rust-ndarray/ndarray), following
+[the Python array API standard](https://data-apis.org/array-api/latest/).
+Powered by [pyo3](https://github.com/PyO3/pyo3). Quickstarted using
+[scientific-python/cookie](https://github.com/scientific-python/cookie).
