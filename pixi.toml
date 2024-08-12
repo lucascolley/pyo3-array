@@ -10,11 +10,14 @@ version = "0.1.0"
 
 [dependencies]
 maturin = "*"
+numpy = "<2"
 pytest = ">=6"
 pytest-cov = ">=3"
 sphinx = ">=7.0"
 furo = ">=2023.08.17"
 pre-commit = ">=3.8.0,<4"
+pip = ">=24.2,<25"
+ipython = ">=8.26.0,<9"
 
 [pypi-dependencies]
 myst_parser = ">=0.13"

@@ -30,7 +30,7 @@ classifiers = [
     "Topic :: Scientific/Engineering",
     "Typing :: Typed",
 ]
-dependencies = []
+dependencies = ["numpy<2"]
 
 [project.optional-dependencies]
 test = [
@@ -57,7 +57,7 @@ Changelog = "https://github.com/lucascolley/pyo3-array/releases"
 
 
 [tool.maturin]
-module-name = "pyo3_array._core"
+module-name = "pyo3_array.xp"
 python-packages = ["pyo3_array"]
 python-source = "src"
 sdist-generator = "git"          # default is cargo
@@ -149,7 +149,7 @@ isort.required-imports = ["from __future__ import annotations"]
 [tool.pylint]
 py-version = "3.8"
 ignore-paths = [".*/_version.py"]
-extension-pkg-allow-list = ["pyo3_array._core"]
+extension-pkg-allow-list = ["pyo3_array.xp"]
 reports.output-format = "colorized"
 similarities.ignore-imports = "yes"
 messages_control.disable = [

@@ -1,3 +1,0 @@
-[submodule "src/ndarray"]
-	path = src/ndarray
-	url = https://github.com/rust-ndarray/ndarray.git
